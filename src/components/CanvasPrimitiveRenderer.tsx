@@ -45,6 +45,7 @@ export const CanvasPrimitiveRenderer = ({
   const selectedLayer = useGlobalStore((s) => s.selected_layer)
 
   useEffect(() => {
+    console.log("CanvasPrimitiveRenderer useEffect")
     if (!canvasRefs.current) return
     if (Object.keys(canvasRefs.current).length === 0) return
     const drawer = new Drawer(canvasRefs.current)

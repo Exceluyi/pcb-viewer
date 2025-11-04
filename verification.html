@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PCB Viewer Verification</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import React from "react";
+    import { createRoot } from "react-dom/client";
+    import { PCBViewer } from "./dist/index.js";
+
+    const container = document.getElementById("root");
+    const root = createRoot(container);
+    root.render(React.createElement(PCBViewer));
+  </script>
+</body>
+</html>

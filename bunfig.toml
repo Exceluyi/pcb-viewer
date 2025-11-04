@@ -1,2 +1,9 @@
 # Disable the Bun lockfile
 lockfile = false
+
+[test]
+preload = ["./tests/setup.ts"]
+tsconfig = "./tests/tsconfig.json"
+
+[jest]
+"automock" = true
